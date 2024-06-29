@@ -1,0 +1,57 @@
+<html data-framework="vue">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Todo</title>
+
+  <!-- <script src="https://unpkg.com/director@1.2.8/build/director.js"></script> -->
+  <style>
+    [v-cloak] {
+      display: none;
+    }
+  </style>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <section class="todoapp">
+    <header class="header">
+      <h1>todos</h1>
+      <input autofocus="autofocus" autocomplete="off" placeholder="您的待办事项是?" class="new-todo" />
+    </header>
+    <section class="main">
+      <input type="checkbox" class="toggle-all" />
+      <ul class="todo-list">
+        <li class="todo">
+          <div class="view">
+            <input type="checkbox" class="toggle" /> <label>吃饭</label>
+            <button class="destroy"></button>
+          </div>
+          <input type="text" class="edit" />
+        </li>
+        <li class="todo completed">
+          <div class="view">
+            <input type="checkbox" class="toggle" checked />
+            <label>睡觉</label>
+            <button class="destroy"></button>
+          </div>
+          <input type="text" class="edit" />
+        </li>
+      </ul>
+    </section>
+    <footer class="footer">
+      <span class="todo-count"> 有<strong>1</strong>项未完成 </span>
+      <ul class="filters">
+        <li><a href="#/all" class="selected">全部</a></li>
+        <li><a href="#/active" class="">未完成</a></li>
+        <li><a href="#/completed" class="">已完成</a></li>
+      </ul>
+      <button class="clear-completed" style="">清除已完成</button>
+    </footer>
+  </section>
+  <footer class="info">
+    <p>双击待办项以编辑。</p>
+  </footer>
+</body>
+
+</html>
